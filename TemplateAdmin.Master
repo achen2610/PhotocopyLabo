@@ -1,0 +1,157 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="TemplateAdmin.Master.cs" Inherits="Photocopy.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Trang Quản Trị</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!-- CSS HERE -->
+	<link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/jquery-ui-1.10.4.css" rel="stylesheet" />
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    
+    <link href="Content/admin/SiteAdmin.css" rel="stylesheet" />
+    <link href="Content/admin/Alert.css" rel="stylesheet" />
+
+
+    <script src="Scripts/jquery-1.7.1.min.js"></script>
+    <script src="Scripts/jquery-ui.js"></script>
+    <script src="Scripts/jquery-ui-1.10.4.js"></script>
+    <%--<script src="Content/admin/Alert.js"></script>--%>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+
+
+</head>
+<body>
+
+    <form runat="server">
+    <nav class="navbar navbar-default" role="navigation">
+		<div class="container">
+		<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+			</div>
+
+	<!-- Collect the nav links, forms, and other content for toggling -->
+			
+			<div class="navbar-collapse collapse" id="navbar-main">
+				<ul class="nav navbar-nav">
+				    <li class="active"><a href="boss">Home</a></li>
+                    <li><a href="/">Nhất Thiên Tân</a></li>
+                    <%--<li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        Products <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Categories</a></li>
+                            <li><a href="#">Products</a></li>
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">Options</a></li>
+                        </ul>
+
+                    </li>--%>
+                </ul>
+                <ul class="nav navbar-nav nav-status" style="float:right">
+                    <li><asp:Label ID="lbStatus" runat="server" /></li>
+                    <li><asp:Button ID="btnExit" CssClass="form-control btn btn-danger" runat="server" Text="Thoát" OnClick="btnExit_Click" /></li>
+                </ul>
+			</div>
+				
+			<!-- /.navbar-collapse -->
+		</div>
+	</nav> <!-- end nav -->
+
+ 
+	
+
+    <div class="container">
+		<div class="row">
+			<div class="col-sm-3 col-md-3">
+				<div class="sidebar-nav">
+                    <div class="well">
+		                <ul class="nav" id="sidenav01"> 
+		                    <li class="nav-header"><span class="glyphicon glyphicon-user"></span>Quản lí sản phẩm</li>        
+		                    <li><a data-toggle="collapse" href="javascript:void(0)" data-target="#san-pham" data-parent="#sidenav01" class="collapsed">
+                                Sản phẩm
+		                        </a>
+                                <div class="collapse" id="san-pham">
+                                <ul class="nav nav-list">
+                                    <li><a href="/product-list">Danh sách sản phẩm</a></li>
+                                    <li><a href="/new-product">Thêm sản phẩm</a></li>
+                                    <li><a href="/add-related-news">Thêm tin tức liên quan</a></li>
+                                    <li><a href="/edit-option">Thêm sửa chức năng</a></li>
+                                </ul>
+                                </div>
+		                    </li>
+                            <li><a data-toggle="collapse" href="javascript:void(0)" data-target="#nha-sx" data-parent="#sidenav01" class="collapsed">
+                                Nhà sản xuất
+		                        </a>
+                                <div class="collapse" id="nha-sx">
+                                <ul class="nav nav-list">
+                                    <li><a href="/CompanyList.aspx">Danh sách nhà sản xuất</a></li>
+                                    <li><a href="/NewCompany.aspx">Thêm nhà sản xuất</a></li>
+                                </ul>
+                                </div>
+		                    </li>
+                            <li><a data-toggle="collapse" href="javascript:void(0)" data-target="#tin-tuc" data-parent="#sidenav01" class="collapsed">
+                                Tin tức
+		                        </a>
+                                <div class="collapse" id="tin-tuc">
+                                <ul class="nav nav-list">
+                                    <li><a href="/news-list">Danh sách tin tức</a></li>
+                                    <li><a href="/add-news">Thêm tin tức</a></li>
+                                </ul>
+                                </div>
+		                    </li>
+                            <li><a data-toggle="collapse" href="javascript:void(0)" data-target="#ho-tro-ky-thuat" data-parent="#sidenav01" class="collapsed">
+                                Hỗ trợ kỹ thuật
+		                        </a>
+                                <div class="collapse" id="ho-tro-ky-thuat">
+                                <ul class="nav nav-list">
+                                    <li><a href="/technique-list">Danh sách</a></li>
+                                    <li><a href="/add-technique">Thêm</a></li>
+                                </ul>
+                                </div>
+		                    </li>
+                            <li><a href="add-customer">Thêm đối tác & khách hàng</a></li>
+                            <li><a href="quan-li-tai-khoan">Tài khoản</a></li>
+                            <%--<li><a href="#">Comments</a></li>
+		                    <li class="active"><a href="#">Members</a></li>
+                            <li><hr></li>
+		                    <li><a href="#">Settings</a></li>
+		                    <li><a href="#">Logout</a></li>--%>
+		                </ul>
+	                </div>
+                </div>
+			</div>
+			<div class="col-sm-9 col-md-9">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+        </div>
+
+
+    <footer>
+        <div style="height:50px">
+
+        </div>
+    </footer>
+    </form>
+
+
+    <script src="Scripts/jquery-1.9.0.min.js"></script>
+	<script src="Scripts/bootstrap.min.js"></script>
+
+</body>
+</html>

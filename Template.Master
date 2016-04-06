@@ -1,0 +1,394 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Template.Master.cs" Inherits="Photocopy.RebuildTemplate" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    
+    
+    <link href="Content/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <script src="../Scripts/jquery-1.11.1.min.js"></script>
+
+    <script src="../Scripts/jcarousel.js"></script>
+    <script src="../Scripts/modernizr.custom.js"></script>
+    <script src="../Scripts/prefixfree.min.js"></script>
+
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.11.2/jquery-ui.js"></script>  
+    <link rel="Stylesheet" href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.11.2/themes/redmond/jquery-ui.css" />
+    <link href='https://fonts.googleapis.com/css?family=Lobster&subset=latin,vietnamese' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+
+    <!-- Custom CSS -->
+    <link href="Home/css/agency.css" rel="stylesheet" />
+	<link href="Home/css/style.css" rel="stylesheet" />
+
+    <link href="Content/RebuildStyle.css" rel="stylesheet" />
+    <link href="Content/text.css" rel="stylesheet" />
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-64453064-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+    
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div id="top"></div>
+
+    <form runat="server">
+
+    <div id="btn_to_top" onclick="$('html, body').animate({scrollTop: 0}, 500);" style="display: none;"></div>
+
+    <!-- Navbar -->
+    <div id="wrap">
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top" style="background-color:#222 !important">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+				
+                    <a class="navbar-brand page-scroll" href="/">Nhất Thiên Tân</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="hidden">
+                            <a href="#page-top"></a>
+                        </li>
+                        <li>
+                            <a href="/dich-vu">Dịch Vụ</a>
+                        </li>
+                        <li>
+                            <a href="/san-pham">Sản Phẩm</a>
+                        </li>
+					    <li>
+                            <a href="/tin-tuc">Tin Tức</a>
+                        </li>
+                        <li>
+                            <a href="/gioi-thieu">Về Chúng Tôi</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+				    <!-- Cart -->
+					    <%--<div class="nav-search dropdown pull-right">
+
+                            <asp:TextBox ID="txtSearch" runat="server" placeholder="Search" ></asp:TextBox>
+                            <asp:Button ID="btnSearch" runat="server" OnClick="btnSearch_Click" style="display:none" />
+
+                        </div>--%>
+
+        
+        <!-- Body -->
+        <div id="body" class="container">
+		    <div class="row">
+				<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+                </asp:ContentPlaceHolder>
+		    </div>
+	    </div>
+        <!-- End body -->
+
+    </div>
+    <!-- End wrap -->
+
+<%--<script lang="javascript">
+    (function () {
+        var _h1 = document.getElementsByTagName('title')[0] || false;
+        var product_name = ''; if (_h1) { product_name = _h1.textContent || _h1.innerText; } var ga = document.createElement('script'); ga.type = 'text/javascript';
+        ga.src = '//live.vnpgroup.net/js/web_client_box.php?hash=0419343f70f2d90c9e5f003027e92482&data=eyJzc29faWQiOjI3NDkyMjUsImhhc2giOiI2YjA0NzIxMzhjYzhmMzU0Mzg2ZmQ2MjUzNTMzMGM5NSJ9&pname=' + product_name;
+        var s = document.getElementsByTagName('script'); s[0].parentNode.insertBefore(ga, s[0]);
+    })();
+</script>--%>
+
+
+    <div id="header-footer">
+		<div class="container">
+            <div class="row">
+                
+			    <div class="col-lg-6 f_cols">
+					<h4>Liên Hệ</h4>
+					<p><span>99 Bà Huyện Thanh Quan, P.Mỹ An, Q.Ngũ Hành Sơn, TP.Đà Nẵng</span></p>
+				    <p>Điện thoại : <span class="phone">0511 3829 979 - 0911 411 479</span></p>
+					<p>Email: <span>info@nhatthientan.com</span></p>
+			    </div>
+				
+				<div class="col-lg-3 f_cols">
+					<h4>Nhất Thiên Tân</h4>
+				    <ul>
+					    <li><a href="#">Giới Thiệu Công Ty</a></li>
+					    <li><a href="#">Tuyển Dụng</a></li>
+					    <li><a href="#">Hỗ Trợ Khách Hàng</a></li>
+				    </ul>	
+			    </div>
+				
+				<div class="col-lg-3 f_cols">
+					<h4>Bản Đồ</h4>
+					<a href="#mapModal" class="map-link" data-toggle="modal">
+                        <div class="map-hover">
+                            <div class="map-hover-content">
+                                <i class="fa fa-search"></i>
+                            </div>
+                        </div>
+                        <img src="../Home/img/map-mini.png" class="img-responsive" alt="" />
+                    </a>
+			    </div>
+
+            </div>
+        </div>
+	</div>
+	
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; Nhất Thiên Tân 2016</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.facebook.com/nhatthientan.corp?fref=ts"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li><a href="#">Privacy Policy</a>
+                        </li>
+                        <li><a href="#">Terms of Use</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Portfolio Modals -->
+    <!-- Use the modals below to showcase details about your portfolio projects! -->
+	
+	<div class="portfolio-modal modal fade" id="mapModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Bản Đồ</h2>
+                            <div class="google-maps">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3834.7428320821114!2d108.2486021!3d16.026897299999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142175011a2eddd%3A0xeb5baec7084f42ba!2zMzI4IEzDqiBWxINuIEhp4bq_biwgS2h1w6ogTeG7uSwgTmfFqSBIw6BuaCBTxqFuLCDEkMOgIE7hurVuZywgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1429778329893" width="100%" height="100%" frameborder="0" style="border:2px solid #777"></iframe>
+							</div>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <%--<script src="../Scripts/slider-js/jquery.min.js"></script>--%>
+    <script type="text/javascript" src="http://vaakash.github.io/jquery/easy-ticker.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.marquee.min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    
+        <!-- Custom Theme JavaScript -->
+    <script src="../Home/js/agency.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
+    <script src="../Home/js/classie.js"></script>
+    <script src="../Home/js/filter.js"></script>
+    <script src="../Home/js/cbpAnimatedHeader.js"></script>
+    <script src="../Home/js/jquery.collagePlus.js"></script>
+    <script src="../Home/js/jquery.removeWhitespace.js"></script>
+    <script src="../Home/js/jquery.collageCaption.js"></script>
+
+
+    <script type="text/javascript">
+
+
+        $(document).ready(function () {
+
+            var dd = $('.lastest-news').easyTicker({
+                direction: 'up',
+                visible: 3,
+                interval: 3000,
+            }).data('easyTicker');
+
+            $("[rel='tooltip']").tooltip();
+
+            $('.thumbnail').hover(
+                function () {
+                    $(this).find('.caption1').fadeIn(100); //.fadeIn(250)
+                },
+                function () {
+                    $(this).find('.caption1').fadeOut(10); //.fadeOut(205)
+                }
+            );
+
+            //$('.htkt-marquee').marquee({
+            //    duration: 10000,
+            //    //gap in pixels between the tickers
+            //    gap: 80,
+            //    //time in milliseconds before the marquee will start animating
+            //    delayBeforeStart: 0,
+            //    //'left' or 'right'
+            //    direction: 'up',
+            //    //true or false - should the marquee be duplicated to show an effect of continues flow
+            //    duplicated: true,
+            //    //true or false - pause the marquee when hover
+            //    pauseOnHover: true
+            //});
+            
+            $("#txtSearch").autocomplete({
+                source: function (request, response) {
+                    var param = { keyword: $('#txtSearch').val() };
+                    $.ajax({
+                        url: "../CheckRegister.asmx/GetProductName",
+                        data: JSON.stringify(param),
+                        dataType: "json",
+                        type: "POST",
+                        contentType: "application/json; charset=utf-8",
+                        dataFilter: function (data) { return data; },
+                        success: function (data) {
+                            response($.map(data.d, function (item) {
+                                return {
+                                    value: item
+                                }
+                            }))
+                        },
+                        error: function (XMLHttpRequest, textStatus, errorThrown) {
+                            var err = eval("(" + XMLHttpRequest.responseText + ")");
+                            alert(err.Message)
+                            // console.log("Ajax Error!");  
+                        }
+                    });
+                },
+                minLength: 2 //This is the Char length of inputTextBox  
+            });
+            
+            //Hàm nút to_top
+            //$("#spacerForTopMenu").hide();
+            $(window).scroll(function () {
+                if ($(window).scrollTop() > 200) {
+                    $("#btn_to_top").fadeIn();
+                }
+                else {
+                    $("#btn_to_top").hide();
+                }
+
+                //if ($(window).scrollTop() > 78) {
+                //    $("#spacerForTopMenu").height($("#yanmenu").height()).show();
+                //    $("#yanmenu").addClass("topmenu_fix").fadeIn();
+                //}
+                //else {
+                //    $("#spacerForTopMenu").hide();
+                //    $("#yanmenu").removeClass("topmenu_fix").fadeIn();
+                //}
+            });
+
+        });
+
+        //Hàm xử lý nút Enter trong khung Search
+        function clickButton(e,buttonid)
+        {
+            var evt = e ? e : window.event;
+            var bt = document.getElementById(buttonid);
+
+            if (bt) {
+                if (evt.keyCode == 13) {
+                    bt.click();
+                    return false;
+                }
+            }
+        }
+
+
+        function disableselect(e) {
+            return false;
+        }
+        function reEnable() {
+            return true;
+        }
+        document.onselectstart = new Function("return false")
+        if (window.sidebar) {
+            document.onmousedown = disableselect
+            document.onclick = reEnable
+        }
+        
+
+        $(window).load(function () {
+            $(document).ready(function () {
+                collage();
+                $('.Collage').collageCaption();
+            });
+        });
+
+
+        // Here we apply the actual CollagePlus plugin
+        function collage() {
+            $('.Collage').removeWhitespace().collagePlus(
+                {
+                    'fadeSpeed': 3000,
+                    'targetHeight': 320,
+                    'allowPartialLastRow': true
+                }
+            );
+        };
+
+        // This is just for the case that the browser window is resized
+        var resizeTimer = null;
+        $(window).bind('resize', function () {
+            // hide all the images until we resize them
+            $('.Collage .Image_Wrapper').css("opacity", 0);
+            // set a timer to re-apply the plugin
+            if (resizeTimer) clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(collage, 200);
+        });
+        
+
+    </script>
+
+	<script src="../Content/bootstrap/js/bootstrap.min.js"></script>
+   
+    </form>
+
+</body>
+
+</html>

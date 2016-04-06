@@ -1,0 +1,13 @@
+﻿body {
+}
+
+
+.error-page{
+    width: 960px;
+    margin: 50px auto;
+}
+.error-page .error-noti{
+    font-size: 30px;
+    font-weight: bold;
+    color: coral;
+}

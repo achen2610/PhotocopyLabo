@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QL_Photocopy" Class="PhotocopyDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=DUYHUNGPC;Initial Catalog=QL_Photocopy;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="QL_PhotocopyConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Sale" Member="Sales">
+    <Type Name="Sale">
+      <Column Name="SaleID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SanPhamID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="GiaGiam" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NgayApDung" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="NgayHetHan" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Association Name="SanPham_Sale" Member="SanPham" ThisKey="SanPhamID" OtherKey="SanPhamID" Type="SanPham" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Visit" Member="Visits">
+    <Type Name="Visit">
+      <Column Name="VisitID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="pageviews" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="useronline" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RelatedNews" Member="RelatedNews">
+    <Type Name="RelatedNew">
+      <Column Name="RelatedNewsID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SanPhamID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RelatedNewsName" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="RelatedNewsLink" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="TinTucID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="EnableRN" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="SanPham_RelatedNew" Member="SanPham" ThisKey="SanPhamID" OtherKey="SanPhamID" Type="SanPham" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[Option]" Member="Options">
+    <Type Name="Option">
+      <Column Name="OptionID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SanPhamID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="OptionName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="OptionDescription" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="EnableOp" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="SanPham_Option" Member="SanPham" ThisKey="SanPhamID" OtherKey="SanPhamID" Type="SanPham" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SanPham" Member="SanPhams">
+    <Type Name="SanPham">
+      <Column Name="SanPhamID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MaSanPham" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MaSanXuat" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TenSanPham" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="LoaiMay" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DonGia" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="NgayNhapHang" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="SoLuong" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ChoThue" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Hot" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="LuotXem" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Gia" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="HinhAnh" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="EnableP" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="SanPham_Sale" Member="Sales" ThisKey="SanPhamID" OtherKey="SanPhamID" Type="Sale" />
+      <Association Name="SanPham_RelatedNew" Member="RelatedNews" ThisKey="SanPhamID" OtherKey="SanPhamID" Type="RelatedNew" />
+      <Association Name="SanPham_Option" Member="Options" ThisKey="SanPhamID" OtherKey="SanPhamID" Type="Option" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NhaSanXuat" Member="NhaSanXuats">
+    <Type Name="NhaSanXuat">
+      <Column Name="SanXuatID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MaSanXuat" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TenSanXuat" Type="System.String" DbType="NChar(50)" CanBeNull="true" />
+      <Column Name="DiaChiSX" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="DienThoaiSX" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Fax" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TinTuc" Member="TinTucs">
+    <Type Name="TinTuc">
+      <Column Name="TinTucID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TinTucTitle" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="TinTucQuote" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="TinTucImage" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="TinTucPostDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TinTucHot" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="TinTucContent" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TechniqueSupport" Member="TechniqueSupports">
+    <Type Name="TechniqueSupport">
+      <Column Name="TechniqueID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TechniqueName" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="TechniqueContent" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="PostDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EnableT" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Customer" Member="Customers">
+    <Type Name="Customer">
+      <Column Name="CustomerID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CustomerName" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="CustomerImage" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Users" Member="Users">
+    <Type Name="User">
+      <Column Name="UserID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Birthday" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Gender" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Telephone" Type="System.String" DbType="NChar(15)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Username" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>
