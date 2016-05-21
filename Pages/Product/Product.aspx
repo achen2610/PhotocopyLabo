@@ -37,7 +37,7 @@
 	<div class="row">
 
 		<!-- Projects -->
-		<div class="projects isotope-wrapper">
+		<div class="product isotope-wrapper">
 			<asp:Repeater ID="repeaterProduct" runat="server">
                 <ItemTemplate>
 			        <!-- Item -->

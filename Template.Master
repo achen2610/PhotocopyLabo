@@ -20,9 +20,6 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
 
     <!-- Custom CSS -->
-    <link href="Home/css/agency.css" rel="stylesheet" />
-	<link href="Home/css/style.css" rel="stylesheet" />
-
     <link href="Content/RebuildStyle.css" rel="stylesheet" />
     <link href="Content/text.css" rel="stylesheet" />
 
@@ -93,13 +90,6 @@
             </div>
             <!-- /.container-fluid -->
         </nav>
-				    <!-- Cart -->
-					    <%--<div class="nav-search dropdown pull-right">
-
-                            <asp:TextBox ID="txtSearch" runat="server" placeholder="Search" ></asp:TextBox>
-                            <asp:Button ID="btnSearch" runat="server" OnClick="btnSearch_Click" style="display:none" />
-
-                        </div>--%>
 
         
         <!-- Body -->
@@ -114,15 +104,6 @@
 
     </div>
     <!-- End wrap -->
-
-<%--<script lang="javascript">
-    (function () {
-        var _h1 = document.getElementsByTagName('title')[0] || false;
-        var product_name = ''; if (_h1) { product_name = _h1.textContent || _h1.innerText; } var ga = document.createElement('script'); ga.type = 'text/javascript';
-        ga.src = '//live.vnpgroup.net/js/web_client_box.php?hash=0419343f70f2d90c9e5f003027e92482&data=eyJzc29faWQiOjI3NDkyMjUsImhhc2giOiI2YjA0NzIxMzhjYzhmMzU0Mzg2ZmQ2MjUzNTMzMGM5NSJ9&pname=' + product_name;
-        var s = document.getElementsByTagName('script'); s[0].parentNode.insertBefore(ga, s[0]);
-    })();
-</script>--%>
 
 
     <div id="header-footer">
@@ -139,9 +120,9 @@
 				<div class="col-lg-3 f_cols">
 					<h4>Nhất Thiên Tân</h4>
 				    <ul>
-					    <li><a href="#">Giới Thiệu Công Ty</a></li>
-					    <li><a href="#">Tuyển Dụng</a></li>
-					    <li><a href="#">Hỗ Trợ Khách Hàng</a></li>
+					    <li><a href="/gioi-thieu">Giới Thiệu Công Ty</a></li>
+					    <li><a>Tuyển Dụng</a></li>
+					    <li><a>Hỗ Trợ Khách Hàng</a></li>
 				    </ul>	
 			    </div>
 				
@@ -153,7 +134,7 @@
                                 <i class="fa fa-search"></i>
                             </div>
                         </div>
-                        <img src="../Home/img/map-mini.png" class="img-responsive" alt="" />
+                        <img src="../Images/map-mini.png" class="img-responsive" alt="" />
                     </a>
 			    </div>
 
@@ -170,22 +151,22 @@
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
                         <li>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a><i class="fa fa-twitter"></i></a>
                         </li>
                         <li>
                             <a target="_blank" href="https://www.facebook.com/nhatthientan.corp?fref=ts"><i class="fa fa-facebook"></i></a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                            <a><i class="fa fa-linkedin"></i></a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline quicklinks">
-                        <li><a href="#">Privacy Policy</a>
+                        <%--<li><a href="#">Privacy Policy</a>
                         </li>
                         <li><a href="#">Terms of Use</a>
-                        </li>
+                        </li>--%>
                     </ul>
                 </div>
             </div>
@@ -227,18 +208,18 @@
     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     
         <!-- Custom Theme JavaScript -->
-    <script src="../Home/js/agency.js"></script>
+    <script src="../Scripts/js/agency.js"></script>
 
     <!-- Plugin JavaScript -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
-    <script src="../Home/js/classie.js"></script>
-    <script src="../Home/js/filter.js"></script>
-    <script src="../Home/js/cbpAnimatedHeader.js"></script>
-    <script src="../Home/js/jquery.collagePlus.js"></script>
-    <script src="../Home/js/jquery.removeWhitespace.js"></script>
-    <script src="../Home/js/jquery.collageCaption.js"></script>
-
+    <script src="../Scripts/js/classie.js"></script>
+    <script src="../Scripts/js/filter.js"></script>
+    <script src="../Scripts/js/cbpAnimatedHeader.js"></script>
+    <script src="../Scripts/js/jquery.collagePlus.js"></script>
+    <script src="../Scripts/js/jquery.removeWhitespace.js"></script>
+    <script src="../Scripts/js/jquery.collageCaption.js"></script>
+    <script src="../Content/bootstrap/js/bootstrap.min.js"></script>
 
     <script type="text/javascript">
 
@@ -304,7 +285,6 @@
             });
             
             //Hàm nút to_top
-            //$("#spacerForTopMenu").hide();
             $(window).scroll(function () {
                 if ($(window).scrollTop() > 200) {
                     $("#btn_to_top").fadeIn();
@@ -312,15 +292,6 @@
                 else {
                     $("#btn_to_top").hide();
                 }
-
-                //if ($(window).scrollTop() > 78) {
-                //    $("#spacerForTopMenu").height($("#yanmenu").height()).show();
-                //    $("#yanmenu").addClass("topmenu_fix").fadeIn();
-                //}
-                //else {
-                //    $("#spacerForTopMenu").hide();
-                //    $("#yanmenu").removeClass("topmenu_fix").fadeIn();
-                //}
             });
 
         });
@@ -351,41 +322,17 @@
             document.onmousedown = disableselect
             document.onclick = reEnable
         }
-        
-
-        $(window).load(function () {
-            $(document).ready(function () {
-                collage();
-                $('.Collage').collageCaption();
-            });
-        });
-
-
-        // Here we apply the actual CollagePlus plugin
-        function collage() {
-            $('.Collage').removeWhitespace().collagePlus(
-                {
-                    'fadeSpeed': 3000,
-                    'targetHeight': 320,
-                    'allowPartialLastRow': true
-                }
-            );
-        };
-
-        // This is just for the case that the browser window is resized
-        var resizeTimer = null;
-        $(window).bind('resize', function () {
-            // hide all the images until we resize them
-            $('.Collage .Image_Wrapper').css("opacity", 0);
-            // set a timer to re-apply the plugin
-            if (resizeTimer) clearTimeout(resizeTimer);
-            resizeTimer = setTimeout(collage, 200);
-        });
-        
 
     </script>
 
-	<script src="../Content/bootstrap/js/bootstrap.min.js"></script>
+    <script>(function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.3";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
    
     </form>
 

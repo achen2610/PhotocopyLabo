@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Template.Master" AutoEventWireup="true" CodeBehind="About.aspx.cs" Inherits="Photocopy.About" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <title>NHẤT THIÊN TÂN | THÔNG TIN VỀ CHÚNG TÔI</title>
+    <title>Nhất Thiên Tân | Thông tin về chúng tôi</title>
 
 </asp:Content>
 
@@ -27,17 +27,13 @@
                     <p>1. Máy văn phòng</p>
                 </div>
                 <div class="node-content-1">
-                    Chúng tôi cung cấp các sản phầm của máy photocopy: <span>Ricoh</span>, Toshiba, Sharp ... trên thị trường Miền Trung của Việt Nam, bao gồm:<br />
-                    <div>
-                        <em>- Máy Photocopy: Các loại máy photocopy đa chức năng kỹ thuật số với hàng loạt các tính năng thuận tiện, hiện đại (In - Copy - Scan) và tiết kiệm sẽ làm hài lòng quý vị. Chúng tôi cung cấp đa dạng các loại máy Photocopy có tốc độ từ thấp đến cao đảm bảo cho nhu cầu của khách hàng với các đặc điểm nổi bật: Panel điều khiển thuận tiện cho người sử dụng, máy có nhiều lối đưa giấy vào nhanh, chính xác, chất lượng bản chụp cao, có thể tự động chụp hai mặt, tự động đảo chiều cấp tài liệu, bộ sắp xếp tài liệu tự động, khả năng sử dụng mực tái sinh, khởi động bằng cảm ứng, giá thành hợp lý ... </em><br />
+                    <p>Chúng tôi cung cấp các sản phầm của máy photocopy: <span>Ricoh</span>, Toshiba, Sharp ... trên thị trường Miền Trung của Việt Nam, bao gồm:</p>
+                    <div class="list">
+                        <p>- Máy Photocopy: Các loại máy photocopy đa chức năng kỹ thuật số với hàng loạt các tính năng thuận tiện, hiện đại (In - Copy - Scan) và tiết kiệm sẽ làm hài lòng quý vị. Chúng tôi cung cấp đa dạng các loại máy Photocopy có tốc độ từ thấp đến cao đảm bảo cho nhu cầu của khách hàng với các đặc điểm nổi bật: Panel điều khiển thuận tiện cho người sử dụng, máy có nhiều lối đưa giấy vào nhanh, chính xác, chất lượng bản chụp cao, có thể tự động chụp hai mặt, tự động đảo chiều cấp tài liệu, bộ sắp xếp tài liệu tự động, khả năng sử dụng mực tái sinh, khởi động bằng cảm ứng, giá thành hợp lý ... </p>
+                        <p>- Máy in : Chúng tôi cung cấp đa dạng các loại máy in của các hãng : HP, Canon, Brother, <span>Ricoh</span> ... có cấu hình từ thấp đến cao đảm bảo phục vụ cho công việc in ấn của quý khách</p>
+                        <p>- Ngoài ra chúng tôi còn cung cấp các vật tư, phụ kiện thay thế của tất cả các thiết bị văn phòng (mực, từ, trống ...).</p>
                     </div>
-                    Hiệu quả in ấn do máy Photocopy của chúng tôi mang lại chắc chắn sẽ làm hài lòng quý vị.<br />
-                    <div>
-                        <em>- Máy in : Chúng tôi cung cấp đa dạng các loại máy in của các hãng : HP, Canon, Brother, <span>Ricoh</span> ... có cấu hình từ thấp đến cao đảm bảo phục vụ cho công việc in ấn của quý khách</em><br />
-                    </div>
-                    <div>
-                        <em>- Ngoài ra chúng tôi còn cung cấp các vật tư, phụ kiện thay thế của tất cả các thiết bị văn phòng (mực, từ, trống ...).</em>
-                    </div>
+                    <p>Hiệu quả in ấn do máy Photocopy của chúng tôi mang lại chắc chắn sẽ làm hài lòng quý vị.</p>
                 </div>
                 <div class="node-2">
                     <p>2. Dịch vụ</p>
@@ -51,7 +47,7 @@
                     <p><em>Trân trọng kính chào !</em></p>
                 </div>
                 <div class="node-4">
-                    <img src="Images/sign.png" />
+                    <img src="../Images/company.jpg" class="img-responsive" />
                 </div>
 
             </div>

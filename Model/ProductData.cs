@@ -471,8 +471,6 @@ namespace Photocopy.Model
                 db.SanPhams.InsertOnSubmit(sp);
                 db.SubmitChanges();
             }
-
-
         //-------------------------------------------------------------------------
 
 

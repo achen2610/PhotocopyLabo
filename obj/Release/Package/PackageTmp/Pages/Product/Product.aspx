@@ -15,21 +15,46 @@
                 <h3>Danh sách sản phẩm</h3>
             </div>
 		</div>
-
-
-   
 	</div>
 	
     <div class="row">
-        <div class="Collage effect-parent">
-            <asp:Repeater ID="repeaterProduct" runat="server">
+		<div class="col-md-12">
+
+			<!-- Filters -->
+			<div id="filters">
+				<ul class="option-set margin-bottom-40">
+					<li><a href="#filter" class="selected" data-filter="*">All</a></li>
+					<li><a href="#filter" data-filter=".photocopy">Máy Photocopy</a></li>
+					<li><a href="#filter" data-filter=".print">Máy In</a></li>
+					<li><a href="#filter" data-filter=".component">Linh Kiện</a></li>
+				</ul>
+				<div class="clearfix"></div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="row">
+
+		<!-- Projects -->
+		<div class="product isotope-wrapper">
+			<asp:Repeater ID="repeaterProduct" runat="server">
                 <ItemTemplate>
-                    <div class="Image_Wrapper" data-caption='<%#Eval("TenSanPham") %>'>
-					    <a href='/chi-tiet-san-pham/<%#Eval("SanPhamID") %>'><img src='http://i1056.photobucket.com/albums/t378/hungld/Photocopy/<%#Eval("HinhAnh") %>.jpg' /></a>
-				    </div>
+			        <!-- Item -->
+			        <div class="isotope-item col-md-3 col-sm-4 <%#Eval("LoaiMay") %>">
+				        <a href="/chi-tiet-san-pham/<%#Eval("SanPhamID") %>">
+					        <img src='http://i1056.photobucket.com/albums/t378/hungld/Photocopy/<%#Eval("HinhAnh") %>.jpg' alt="" />
+					        <div class="overlay">
+						        <div class="overlay-content">
+							        <h4><%#Eval("TenSanPham") %></h4>
+						        </div>
+					        </div>
+				        </a>
+			        </div>
                 </ItemTemplate>
             </asp:Repeater>
-        </div>
+		</div>
+
 	</div>
 
 </asp:Content>

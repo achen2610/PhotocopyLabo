@@ -11,21 +11,20 @@
     <meta name="description" content="Nhất Thiên Tân Company" />
     <meta name="author" content="AChen" />
 
-    <title>Nhất Thiên Tân - Chuyên cung cấp và cho thuê máy photocopy</title>
+    <title>Nhất Thiên Tân - Chuyên cung cấp cho thuê và sửa chữa máy photocopy</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="Content/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 	
 	<!-- Wow Core CSS -->
-	<link rel="stylesheet" href="Home/css/animate.min.css" />
+	<link rel="stylesheet" href="Content/animate.min.css" />
 	
     <!-- Custom CSS -->
-    <link href="Home/css/agency.css" rel="stylesheet" />
-	<link href="Home/css/style.css" rel="stylesheet" />
-	<link href="Home/css/transitions.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="Content/RebuildStyle.css" rel="stylesheet" />
+	<link href="Content/transitions.css" rel="stylesheet" type="text/css" media="all" />
 
     <!-- Custom Fonts -->
-    <link href="Home/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="Content/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 	<link href='https://fonts.googleapis.com/css?family=Noto+Sans&subset=latin,vietnamese' rel='stylesheet' type='text/css' />
     <link href='https://fonts.googleapis.com/css?family=Lobster&subset=latin,vietnamese' rel='stylesheet' type='text/css' />
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css' />
@@ -86,8 +85,9 @@
     <header>
          <div class="container">
             <div class="intro-text">
-                <div class="intro-lead-in wow fadeInLeft">Chuyên cung cấp và cho thuê máy photocopy</div>
+                <div class="intro-lead-in wow fadeInLeft">Chuyên cung cấp - cho thuê - sửa chữa máy photocopy</div>
                 <div class="intro-heading wow fadeInLeft" data-wow-delay="0.5s">Ricoh - Toshiba - Canon - Sharp</div>
+                <div class="intro-lead-in wow fadeInLeft" data-wow-delay="0.7s">Hotline: 0905 173 617 - 0911 411 479</div>
                 <a href="#services" class="page-scroll btn btn-xl wow fadeInLeftBig" data-wow-delay="0.8s">Tìm hiểu thêm</a>
             </div>
         </div> 
@@ -132,11 +132,32 @@
             </div>
 			<div class="row">
 				<div class="col-lg-2 col-lg-offset-10 more-link wow fadeIn" data-wow-delay="0.5s">
-					<a>Tìm hiểu thêm</a>
+					<a href="/dich-vu">Tìm hiểu thêm</a>
 				</div>
 			</div>
         </div>
     </section>
+
+    <!-- advertisement -->
+	<div class="parallax-window" data-parallax="scroll" data-image-src="../Images/background.jpg">
+		<div class="container clearfix banner">
+			<div class="row">
+				<div class="col-lg-9">
+					<div class="banner-des">
+						<h3>Bạn đang có nhu cầu về mua hay thuê máy photocopy !</h3>
+						<span>Hãy liên hệ với chúng tôi để nhận được những thông tin chi tiết về sản phẩm và dịch vụ tốt nhất.</span>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="banner-link">
+						<!-- <a href="#contact" class="button button-xlarge button-rounded page-scroll">Liên Hệ</a> -->
+						<p><span class="qs"><img src="Images/icon/phone.png" width="48" height="48" /><span class="popover popover1 above">0911 411 479</span></span></p>
+						<p><span class="qs"><a href="#contact" class="page-scroll"><img src="Images/icon/mail.png" width="48" height="48" /></a><span class="popover above">info@nhatthientan.com</span></span></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
     <!-- Product Grid Section -->
     <section id="product" class="bg-light-gray">
@@ -168,7 +189,7 @@
 	        <div class="row">
 
 		        <!-- Projects -->
-		        <div class="projects isotope-wrapper">
+		        <div class="product isotope-wrapper">
 			        <asp:Repeater ID="repeaterProduct" runat="server">
                         <ItemTemplate>
 			                <!-- Item -->
@@ -188,111 +209,13 @@
 
 	        </div>
 
-            <%--<div class="button-group filter-button-group">
-                <button data-filter="*">show all</button>
-                <button data-filter=".photocopy">photocopy</button>
-                <button data-filter=".print">print</button>
-                <button data-filter=".component">component</button>
-            </div>
-
-            <div class="row">
-                <div class="projects isotope-wrapper">
-                    <asp:Repeater ID="repeater1" runat="server">
-                        <ItemTemplate>
-                            <div class="isotope-item col-md-3 col-sm-4 <%#Eval("LoaiMay") %>">
-				                <a href="/chi-tiet-san-pham/<%#Eval("SanPhamID") %>">
-					                <img src='http://i1056.photobucket.com/albums/t378/hungld/Photocopy/<%#Eval("HinhAnh") %>.jpg' />
-					                <div class="overlay">
-						                <div class="overlay-content">
-							                <h4><%#Eval("TenSanPham") %></h4>
-							                <span>March 2016</span>
-						                </div>
-					                </div>
-				                </a>
-			                </div>
-                            
-                        </ItemTemplate>
-                    </asp:Repeater>
-                </div>
-            </div>--%>
-
-			<%--<div class="row wow fadeIn">
-				<section class="Collage effect-parent">
-                    <asp:Repeater ID="repeaterProduct" runat="server">
-                        <ItemTemplate>
-                            <div class='Image_Wrapper' data-caption='<%#Eval("TenSanPham") %>'>
-						        <a href='/chi-tiet-san-pham/<%#Eval("SanPhamID") %>'><img src='http://i1056.photobucket.com/albums/t378/hungld/Photocopy/<%#Eval("HinhAnh") %>.jpg' /></a>
-					        </div>
-                        </ItemTemplate>
-                    </asp:Repeater>
-
-                    <div class="Image_Wrapper" data-caption="Ricoh Aficio MP 2001">
-						<a><img src="../Home/img/portfolio/2001.jpg" /></a>
-					</div>
-					<div class="Image_Wrapper" data-caption="Ricoh Aficio MP 2501L">
-						<a><img src="../Home/img/portfolio/2501L.jpg" /></a>
-					</div>
-					<div class="Image_Wrapper" data-caption="Toshiba e Studio 455">
-						<a><img src="../Home/img/portfolio/toshiba-455.jpg" /></a>
-					</div>
-					<div class="Image_Wrapper" data-caption="Toshiba e Studio 520">
-						<a><img src="../Home/img/portfolio/toshiba-520.jpg" /></a>
-					</div>
-					<div class="Image_Wrapper" data-caption="Ricoh Aficio MP 3053">
-						<a><img src="../Home/img/portfolio/3053.jpg" /></a>
-					</div>
-					<div class="Image_Wrapper" data-caption="Ricoh Aficio MP 2001">
-						<a><img src="../Home/img/portfolio/2001.jpg" /></a>
-					</div>
-					<div class="Image_Wrapper" data-caption="Ricoh Aficio MP 3350">
-						<a><img src="../Home/img/portfolio/3350.jpg" /></a>
-					</div>
-					<div class="Image_Wrapper" data-caption="Toshiba e Studio 455">
-						<a><img src="../Home/img/portfolio/toshiba-455.jpg" /></a>
-					</div>
-					<div class="Image_Wrapper" data-caption="Trống">
-						<a><img src="../Home/img/portfolio/trong.jpg" /></a>
-					</div>
-					<div class="Image_Wrapper" data-caption="Bánh Răng">
-						<a><img src="../Home/img/portfolio/banh_rang.jpg" /></a>
-					</div>
-					<div class="Image_Wrapper" data-caption="Lô Sấy">
-						<a><img src="../Home/img/portfolio/lo_say.jpg" /></a>
-					</div>
-					<div class="Image_Wrapper" data-caption="Mực In">
-						<a><img src="../Home/img/portfolio/muc_in.jpg" /></a>
-					</div>
-				</section>
-			</div>--%>
-			
 			<div class="row">
 				<div class="col-lg-2 col-lg-offset-10 more-link wow fadeIn" data-wow-delay="0.5s">
-					<a>Tìm hiểu thêm</a>
+					<a href="/san-pham">Tìm hiểu thêm</a>
 				</div>
 			</div>
         </div>
     </section>
-	
-	<!-- advertisement -->
-	<div class="parallax-window" data-parallax="scroll" data-image-src="Home/img/background.jpg">
-		<div class="container clearfix banner">
-			<div class="row">
-				<div class="col-lg-9">
-					<div class="banner-des">
-						<h3>Bạn đang có nhu cầu về mua hay thuê máy photocopy !</h3>
-						<span>Hãy liên hệ với chúng tôi để nhận được những thông tin chi tiết về sản phẩm và dịch vụ tốt nhất.</span>
-					</div>
-				</div>
-				<div class="col-lg-3">
-					<div class="banner-link">
-						<!-- <a href="#contact" class="button button-xlarge button-rounded page-scroll">Liên Hệ</a> -->
-						<p><span class="qs"><img src="Home/img/icon/phone.png" width="48" height="48" /><span class="popover popover1 above">0911 411 479</span></span></p>
-						<p><span class="qs"><a href="#contact" class="page-scroll"><img src="Home/img/icon/mail.png" width="48" height="48" /></a><span class="popover above">info@nhatthientan.com</span></span></p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
 	
 	<!-- News Section -->
 	<section id="news">
@@ -420,7 +343,7 @@
                     <ul class="timeline">
                         <li class="wow fadeInLeft">
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="Home/img/about/company.jpg" alt="" />
+                                <img class="img-circle img-responsive" src="Images/about/company.jpg" alt="" />
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
@@ -434,7 +357,7 @@
                         </li>
                         <li class="timeline-inverted wow fadeInRight">
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="Home/img/about/staff.jpg" alt="" />
+                                <img class="img-circle img-responsive" src="Images/about/staff.jpg" alt="" />
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
@@ -448,7 +371,7 @@
                         </li>
                         <li class="wow fadeInLeft">
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="Home/img/about/services.jpg" alt="" />
+                                <img class="img-circle img-responsive" src="Images/about/services.jpg" alt="" />
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
@@ -462,7 +385,7 @@
                         </li>
                         <li class="timeline-inverted wow fadeInRight">
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="Home/img/about/product.jpg" alt="" />
+                                <img class="img-circle img-responsive" src="Images/about/product.jpg" alt="" />
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
@@ -505,12 +428,12 @@
 				<div class="col-lg-6">
 					<p><b class="color-blue">Một vài đối tác của chúng tôi</b></p>
 					<ul>
-						<li><img src="Home/img/logo/Logo-Ricoh.png" class="img-responsive" alt="" /></li>
-						<li><img src="Home/img/logo/Logo-Toshiba.png" class="img-responsive" alt="" /></li>
-						<li><img src="Home/img/logo/Logo-Canon.png" class="img-responsive" alt="" /></li>
-						<li><img src="Home/img/logo/Logo-Gestetner.png" class="img-responsive" alt="" /></li>
-						<li><img src="Home/img/logo/Logo-Sharp.png" class="img-responsive" alt="" /></li>
-						<li><img src="Home/img/logo/Logo-Kyocera.png" class="img-responsive" alt="" /></li>
+						<li><img src="Images/logo/Logo-Ricoh.png" class="img-responsive" alt="" /></li>
+						<li><img src="Images/logo/Logo-Toshiba.png" class="img-responsive" alt="" /></li>
+						<li><img src="Images/logo/Logo-Canon.png" class="img-responsive" alt="" /></li>
+						<li><img src="Images/logo/Logo-Gestetner.png" class="img-responsive" alt="" /></li>
+						<li><img src="Images/logo/Logo-Sharp.png" class="img-responsive" alt="" /></li>
+						<li><img src="Images/logo/Logo-Kyocera.png" class="img-responsive" alt="" /></li>
 					</ul>
 				</div>
 			</div>
@@ -576,9 +499,9 @@
 				<div class="col-lg-3 f_cols">
 					<h4>Nhất Thiên Tân</h4>
 				    <ul>
-					    <li><a href="#">Giới Thiệu Công Ty</a></li>
-					    <li><a href="#">Tuyển Dụng</a></li>
-					    <li><a href="#">Hỗ Trợ Khách Hàng</a></li>
+					    <li><a href="/gioi-thieu">Giới Thiệu Công Ty</a></li>
+					    <li><a>Tuyển Dụng</a></li>
+					    <li><a>Hỗ Trợ Khách Hàng</a></li>
 				    </ul>	
 			    </div>
 				
@@ -590,7 +513,7 @@
                                 <i class="fa fa-search"></i>
                             </div>
                         </div>
-                        <img src="Home/img/map-mini.png" class="img-responsive" alt="" />
+                        <img src="../Images/map-mini.png" class="img-responsive" alt="" />
                     </a>
 			    </div>
 
@@ -607,22 +530,22 @@
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
                         <li>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a><i class="fa fa-twitter"></i></a>
                         </li>
                         <li>
                             <a target="_blank" href="https://www.facebook.com/nhatthientan.corp?fref=ts"><i class="fa fa-facebook"></i></a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                            <a><i class="fa fa-linkedin"></i></a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline quicklinks">
-                        <li><a href="#">Privacy Policy</a>
+                        <%--<li><a href="#">Privacy Policy</a>
                         </li>
                         <li><a href="#">Terms of Use</a>
-                        </li>
+                        </li>--%>
                     </ul>
                 </div>
             </div>
@@ -657,73 +580,35 @@
         </div>
     </div>
 	
-	<script type="text/javascript" src="Home/js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="Scripts/js/jquery-1.10.2.min.js"></script>
 	
     <!-- jQuery -->
-    <script src="Home/js/jquery.js"></script>
-	<script src="Home/js/parallax.js-1.4.2/parallax.js"></script>
-	<script src="Home/js/wow.min.js"></script>
-	<script src="Home/js/jquery.collagePlus.js"></script>
-    <script src="Home/js/jquery.removeWhitespace.js"></script>
-    <script src="Home/js/jquery.collageCaption.js"></script>
+    <script src="Scripts/js/jquery.js"></script>
+	<script src="Scripts/js/parallax/parallax.js"></script>
+	<script src="Scripts/js/wow.min.js"></script>
+	<script src="Scripts/js/jquery.collagePlus.js"></script>
+    <script src="Scripts/js/jquery.removeWhitespace.js"></script>
+    <script src="Scripts/js/jquery.collageCaption.js"></script>
 	
 	
 	<script>
 	    new WOW().init();
     </script>
-	
-	<script type="text/javascript">
-
-	    // All images need to be loaded for this plugin to work so
-	    // we end up waiting for the whole window to load in this example
-	    $(window).load(function () {
-	        $(document).ready(function () {
-	            collage();
-	            $('.Collage').collageCaption();
-	        });
-	    });
-
-
-	    // Here we apply the actual CollagePlus plugin
-	    function collage() {
-	        $('.Collage').removeWhitespace().collagePlus(
-                {
-                    'fadeSpeed': 3000,
-                    'targetHeight': 320,
-                    'allowPartialLastRow': true
-                }
-            );
-	    };
-
-	    // This is just for the case that the browser window is resized
-	    var resizeTimer = null;
-	    $(window).bind('resize', function () {
-	        // hide all the images until we resize them
-	        $('.Collage .Image_Wrapper').css("opacity", 0);
-	        // set a timer to re-apply the plugin
-	        if (resizeTimer) clearTimeout(resizeTimer);
-	        resizeTimer = setTimeout(collage, 200);
-	    });
-
-    </script>
-	
-    <!-- Bootstrap Core JavaScript -->
-    <script src="Home/js/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
-    <script src="Home/js/filter.js"></script>
-    <script src="Home/js/classie.js"></script>
-    <script src="Home/js/cbpAnimatedHeader.js"></script>
+    <script src="Scripts/js/filter.js"></script>
+    <script src="Scripts/js/classie.js"></script>
+    <script src="Scripts/js/cbpAnimatedHeader.js"></script>
+    <script src="Content/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- Contact Form JavaScript -->
-    <script src="Home/js/jqBootstrapValidation.js"></script>
-    <script src="Home/js/contact_me.js"></script>
-	
+    <script src="Scripts/js/jqBootstrapValidation.js"></script>
+    <script src="Scripts/js/contact_me.js"></script>
 	
     <!-- Custom Theme JavaScript -->
-    <script src="Home/js/agency.js"></script>
+    <script src="Scripts/js/agency.js"></script>
 
 </body>
 

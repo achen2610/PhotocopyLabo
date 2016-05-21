@@ -400,77 +400,88 @@
     <Content Include="ckeditor\skins\office2013\images\lock.png" />
     <Content Include="ckeditor\skins\office2013\images\refresh.png" />
     <Content Include="ckeditor\styles.js" />
-    <Content Include="Home\css\agency.css" />
-    <Content Include="Home\css\animate.min.css" />
-    <Content Include="Home\css\bootstrap.css" />
-    <Content Include="Home\css\bootstrap.min.css" />
-    <Content Include="Home\css\style.css" />
-    <Content Include="Home\css\transitions.css" />
-    <Content Include="Home\font-awesome\css\font-awesome.css" />
-    <Content Include="Home\font-awesome\css\font-awesome.min.css" />
-    <Content Include="Home\font-awesome\fonts\fontawesome-webfont.svg" />
-    <Content Include="Home\fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="Home\img\about\1.jpg" />
-    <Content Include="Home\img\about\2.jpg" />
-    <Content Include="Home\img\about\3.jpg" />
-    <Content Include="Home\img\about\4.jpg" />
-    <Content Include="Home\img\about\company.jpg" />
-    <Content Include="Home\img\about\product.jpg" />
-    <Content Include="Home\img\about\services.jpg" />
-    <Content Include="Home\img\about\staff.jpg" />
-    <Content Include="Home\img\background-1920x1200.jpg" />
-    <Content Include="Home\img\background.jpg" />
-    <Content Include="Home\img\cool-light-wallpaper.jpg" />
-    <Content Include="Home\img\dark-blue-background.jpg" />
-    <Content Include="Home\img\header-bg.jpg" />
-    <Content Include="Home\img\icon\mail.png" />
-    <Content Include="Home\img\icon\phone.png" />
-    <Content Include="Home\img\logo\Logo-Canon.png" />
-    <Content Include="Home\img\logo\Logo-Gestetner.png" />
-    <Content Include="Home\img\logo\Logo-Konica.png" />
-    <Content Include="Home\img\logo\Logo-Kyocera.png" />
-    <Content Include="Home\img\logo\Logo-Ricoh.png" />
-    <Content Include="Home\img\logo\Logo-Sharp.png" />
-    <Content Include="Home\img\logo\Logo-Toshiba.png" />
-    <Content Include="Home\img\logo\Logo-Xerox.png" />
-    <Content Include="Home\img\map-image.png" />
-    <Content Include="Home\img\map-mini.jpg" />
-    <Content Include="Home\img\map-mini.png" />
-    <Content Include="Home\img\portfolio\2001.jpg" />
-    <Content Include="Home\img\portfolio\2501L.jpg" />
-    <Content Include="Home\img\portfolio\3053.jpg" />
-    <Content Include="Home\img\portfolio\3350.jpg" />
-    <Content Include="Home\img\portfolio\background-1920x1200.jpg" />
-    <Content Include="Home\img\portfolio\banh_rang.jpg" />
-    <Content Include="Home\img\portfolio\lo_say.jpg" />
-    <Content Include="Home\img\portfolio\muc_in.jpg" />
-    <Content Include="Home\img\portfolio\toshiba-455.jpg" />
-    <Content Include="Home\img\portfolio\toshiba-520.jpg" />
-    <Content Include="Home\img\portfolio\trong.jpg" />
-    <Content Include="Home\index.html" />
-    <Content Include="Home\js\agency.js" />
-    <Content Include="Home\js\bootstrap.js" />
-    <Content Include="Home\js\bootstrap.min.js" />
-    <Content Include="Home\js\cbpAnimatedHeader.js" />
-    <Content Include="Home\js\cbpAnimatedHeader.min.js" />
-    <Content Include="Home\js\classie.js" />
-    <Content Include="Home\js\contact_me.js" />
-    <Content Include="Home\js\filter.js" />
-    <Content Include="Home\js\jqBootstrapValidation.js" />
-    <Content Include="Home\js\jquery-1.10.2.min.js" />
-    <Content Include="Home\js\jquery.collageCaption.js" />
-    <Content Include="Home\js\jquery.collageCaption.min.js" />
-    <Content Include="Home\js\jquery.collagePlus.js" />
-    <Content Include="Home\js\jquery.collagePlus.min.js" />
-    <Content Include="Home\js\jquery.js" />
-    <Content Include="Home\js\jquery.removeWhitespace.js" />
-    <Content Include="Home\js\jquery.removeWhitespace.min.js" />
-    <Content Include="Home\js\parallax.js-1.4.2\parallax.js" />
-    <Content Include="Home\js\parallax.js-1.4.2\parallax.min.js" />
-    <Content Include="Home\js\wow.min.js" />
+    <Content Include="Content\animate.min.css" />
+    <Content Include="Content\font-awesome\css\font-awesome.css" />
+    <Content Include="Content\font-awesome\css\font-awesome.min.css" />
+    <Content Include="Content\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\transitions.css" />
     <Content Include="HtmlPage1.html" />
-    <Content Include="Images\bg_overlay.png" />
-    <Content Include="Images\go-top.png" />
+    <Content Include="Images\about\1.jpg" />
+    <Content Include="Images\about\2.jpg" />
+    <Content Include="Images\about\3.jpg" />
+    <Content Include="Images\about\4.jpg" />
+    <Content Include="Images\about\company.jpg" />
+    <Content Include="Images\about\product.jpg" />
+    <Content Include="Images\about\services.jpg" />
+    <Content Include="Images\about\staff.jpg" />
+    <Content Include="Images\background-1920x1200.jpg" />
+    <Content Include="Images\background.jpg" />
+    <Content Include="Images\company.jpg" />
+    <Content Include="Images\cool-light-wallpaper.jpg" />
+    <Content Include="Images\dark-blue-background.jpg" />
+    <Content Include="Images\header-bg.jpg" />
+    <Content Include="Images\icon-old\add.png" />
+    <Content Include="Images\icon-old\add2.png" />
+    <Content Include="Images\icon-old\available.png" />
+    <Content Include="Images\icon-old\back.png" />
+    <Content Include="Images\icon-old\bg_overlay.png" />
+    <Content Include="Images\icon-old\bullet_blue.png" />
+    <Content Include="Images\icon-old\calendar.gif" />
+    <Content Include="Images\icon-old\chevron-right-32-small.png" />
+    <Content Include="Images\icon-old\chevron-right-32.png" />
+    <Content Include="Images\icon-old\Delete.png" />
+    <Content Include="Images\icon-old\dropdown.png" />
+    <Content Include="Images\icon-old\Edit.png" />
+    <Content Include="Images\icon-old\edit2.png" />
+    <Content Include="Images\icon-old\error.jpg" />
+    <Content Include="Images\icon-old\error.png" />
+    <Content Include="Images\icon-old\gio.png" />
+    <Content Include="Images\icon-old\giohang.png" />
+    <Content Include="Images\icon-old\go-top.png" />
+    <Content Include="Images\icon-old\icons.png" />
+    <Content Include="Images\icon-old\in-stock.png" />
+    <Content Include="Images\icon-old\loading.png" />
+    <Content Include="Images\icon-old\login-image.png" />
+    <Content Include="Images\icon-old\logo-150.jpg" />
+    <Content Include="Images\icon-old\logo.jpg" />
+    <Content Include="Images\icon-old\not_available.png" />
+    <Content Include="Images\icon-old\nuttruot.png" />
+    <Content Include="Images\icon-old\save-icon.png" />
+    <Content Include="Images\icon-old\sign.png" />
+    <Content Include="Images\icon-old\spinner.png" />
+    <Content Include="Images\icon-old\tick.png" />
+    <Content Include="Images\icon-old\title-bar.png" />
+    <Content Include="Images\icon-old\title-bar1.png" />
+    <Content Include="Images\icon-old\title-bar2.png" />
+    <Content Include="Images\icon-old\trash-32.png" />
+    <Content Include="Images\icon\mail.png" />
+    <Content Include="Images\icon\phone.png" />
+    <Content Include="Images\logo\Logo-Canon.png" />
+    <Content Include="Images\logo\Logo-Gestetner.png" />
+    <Content Include="Images\logo\Logo-Konica.png" />
+    <Content Include="Images\logo\Logo-Kyocera.png" />
+    <Content Include="Images\logo\Logo-Ricoh.png" />
+    <Content Include="Images\logo\Logo-Sharp.png" />
+    <Content Include="Images\logo\Logo-Toshiba.png" />
+    <Content Include="Images\logo\Logo-Xerox.png" />
+    <Content Include="Images\map-image.png" />
+    <Content Include="Images\map-mini.jpg" />
+    <Content Include="Images\map-mini.png" />
+    <Content Include="Images\office.jpg" />
+    <Content Include="Images\portfolio\2001.jpg" />
+    <Content Include="Images\portfolio\2501L.jpg" />
+    <Content Include="Images\portfolio\3053.jpg" />
+    <Content Include="Images\portfolio\3350.jpg" />
+    <Content Include="Images\portfolio\background-1920x1200.jpg" />
+    <Content Include="Images\portfolio\banh_rang.jpg" />
+    <Content Include="Images\portfolio\lo_say.jpg" />
+    <Content Include="Images\portfolio\muc_in.jpg" />
+    <Content Include="Images\portfolio\toshiba-455.jpg" />
+    <Content Include="Images\portfolio\toshiba-520.jpg" />
+    <Content Include="Images\portfolio\trong.jpg" />
+    <Content Include="Images\service1.jpg" />
+    <Content Include="Images\service2.jpg" />
+    <Content Include="Images\service3.jpg" />
     <Content Include="Login.aspx" />
     <Content Include="Pages\Admin\AddCustomer.aspx" />
     <Content Include="Pages\Admin\AddNews.aspx" />
@@ -479,7 +490,6 @@
     <Content Include="Pages\Admin\Boss.aspx" />
     <Content Include="Pages\Admin\ManageUser.aspx" />
     <Content Include="Pages\Admin\Register.aspx" />
-    <Content Include="Pages\Product\Brands.aspx" />
     <Content Include="CartDetails.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\admin\Alert.css" />
@@ -836,60 +846,22 @@
     <Content Include="Pages\Admin\EditTechnique.aspx" />
     <Content Include="error.html" />
     <Content Include="favicon.ico" />
-    <Content Include="Pages\Service\AdjustGuaranteeServices.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Home.aspx" />
-    <Content Include="Pages\Product\HotProduct.aspx" />
-    <Content Include="Images\error.png" />
-    <Content Include="Images\logo-150.jpg" />
     <Content Include="Images\logo-brand\canon.jpg" />
     <Content Include="Images\logo-brand\ricoh.jpg" />
     <Content Include="Images\logo-brand\sharp.jpg" />
     <Content Include="Images\logo-brand\toshiba.jpg" />
     <Content Include="Images\logo-brand\Xerox.jpg" />
-    <Content Include="Images\sign.png" />
-    <Content Include="Images\tick.png" />
-    <Content Include="Images\title-bar2.png" />
-    <Content Include="Images\title-bar1.png" />
-    <Content Include="Images\add.png" />
-    <Content Include="Images\add2.png" />
-    <Content Include="Images\back.png" />
-    <Content Include="Images\chevron-right-32-small.png" />
-    <Content Include="Images\chevron-right-32.png" />
-    <Content Include="Images\dropdown.png" />
-    <Content Include="Images\available.png" />
-    <Content Include="Images\bullet_blue.png" />
-    <Content Include="Images\calendar.gif" />
-    <Content Include="Images\Delete.png" />
-    <Content Include="Images\Edit.png" />
-    <Content Include="Images\edit2.png" />
-    <Content Include="Images\error.jpg" />
-    <Content Include="Images\gio.png" />
-    <Content Include="Images\giohang.png" />
-    <Content Include="Images\icons.png" />
-    <Content Include="Images\in-stock.png" />
-    <Content Include="Images\loading.png" />
-    <Content Include="Images\login-image.png" />
-    <Content Include="Images\logo.jpg" />
-    <Content Include="Images\not_available.png" />
-    <Content Include="Images\nuttruot.png" />
-    <Content Include="Images\save-icon.png" />
-    <Content Include="Images\spinner.png" />
-    <Content Include="Images\title-bar.png" />
-    <Content Include="Images\trash-32.png" />
     <Content Include="Pages\News\News.aspx" />
-    <Content Include="Pages\Service\MaintenanceServices.aspx" />
     <Content Include="Pages\Admin\NewProduct.aspx" />
     <Content Include="Pages\News\NewsDetail.aspx" />
     <Content Include="Pages\Admin\NewsList.aspx" />
-    <Content Include="Pages\Product\Photocopy.aspx" />
-    <Content Include="Pages\Product\Print.aspx" />
     <Content Include="Pages\Product\Product.aspx" />
     <Content Include="Pages\Product\ProductDetails.aspx" />
     <Content Include="Pages\Admin\ProductList.aspx" />
-    <Content Include="Pages\Service\RentServices.aspx" />
-    <Content Include="Pages\Product\Scan.aspx" />
+    <Content Include="Pages\Service\Services.aspx" />
     <Content Include="Scripts\bootstrap-datepicker.js" />
     <Content Include="Scripts\bootstrap-datetimepicker.js" />
     <Content Include="Scripts\bootstrap-filestyle.min.js" />
@@ -930,9 +902,29 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Scripts\jquery.marquee.min.js" />
     <Content Include="Scripts\jquery.textillate.js" />
+    <Content Include="Scripts\js\agency.js" />
     <Content Include="Scripts\js\animate.min.css" />
+    <Content Include="Scripts\js\bootstrap.js" />
+    <Content Include="Scripts\js\bootstrap.min.js" />
+    <Content Include="Scripts\js\cbpAnimatedHeader.js" />
+    <Content Include="Scripts\js\cbpAnimatedHeader.min.js" />
+    <Content Include="Scripts\js\classie.js" />
+    <Content Include="Scripts\js\contact_me.js" />
+    <Content Include="Scripts\js\filter.js" />
+    <Content Include="Scripts\js\jqBootstrapValidation.js" />
+    <Content Include="Scripts\js\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\js\jquery.collageCaption.js" />
+    <Content Include="Scripts\js\jquery.collageCaption.min.js" />
+    <Content Include="Scripts\js\jquery.collagePlus.js" />
+    <Content Include="Scripts\js\jquery.collagePlus.min.js" />
     <Content Include="Scripts\js\jquery.desoslide.css" />
     <Content Include="Scripts\js\jquery.desoslide.js" />
+    <Content Include="Scripts\js\jquery.js" />
+    <Content Include="Scripts\js\jquery.removeWhitespace.js" />
+    <Content Include="Scripts\js\jquery.removeWhitespace.min.js" />
+    <Content Include="Scripts\js\parallax\parallax.js" />
+    <Content Include="Scripts\js\parallax\parallax.min.js" />
+    <Content Include="Scripts\js\wow.min.js" />
     <Content Include="Scripts\modernizr.custom.js" />
     <Content Include="Scripts\nivo\jquery.nivo.slider.pack.js" />
     <Content Include="Scripts\nivo\nivo-style.css" />
@@ -963,47 +955,36 @@
     <Content Include="ckeditor\samples\toolbarconfigurator\font\fontello.ttf" />
     <Content Include="ckeditor\samples\toolbarconfigurator\font\fontello.woff" />
     <Content Include="ckeditor\samples\toolbarconfigurator\lib\codemirror\LICENSE" />
-    <Content Include="Home\font-awesome\fonts\fontawesome-webfont.eot" />
-    <Content Include="Home\font-awesome\fonts\fontawesome-webfont.ttf" />
-    <Content Include="Home\font-awesome\fonts\fontawesome-webfont.woff" />
-    <Content Include="Home\font-awesome\fonts\FontAwesome.otf" />
-    <Content Include="Home\font-awesome\less\bordered-pulled.less" />
-    <Content Include="Home\font-awesome\less\core.less" />
-    <Content Include="Home\font-awesome\less\fixed-width.less" />
-    <Content Include="Home\font-awesome\less\font-awesome.less" />
-    <Content Include="Home\font-awesome\less\icons.less" />
-    <Content Include="Home\font-awesome\less\larger.less" />
-    <Content Include="Home\font-awesome\less\list.less" />
-    <Content Include="Home\font-awesome\less\mixins.less" />
-    <Content Include="Home\font-awesome\less\path.less" />
-    <Content Include="Home\font-awesome\less\rotated-flipped.less" />
-    <Content Include="Home\font-awesome\less\spinning.less" />
-    <Content Include="Home\font-awesome\less\stacked.less" />
-    <Content Include="Home\font-awesome\less\variables.less" />
-    <Content Include="Home\font-awesome\scss\font-awesome.scss" />
-    <Content Include="Home\font-awesome\scss\_bordered-pulled.scss" />
-    <Content Include="Home\font-awesome\scss\_core.scss" />
-    <Content Include="Home\font-awesome\scss\_fixed-width.scss" />
-    <Content Include="Home\font-awesome\scss\_icons.scss" />
-    <Content Include="Home\font-awesome\scss\_larger.scss" />
-    <Content Include="Home\font-awesome\scss\_list.scss" />
-    <Content Include="Home\font-awesome\scss\_mixins.scss" />
-    <Content Include="Home\font-awesome\scss\_path.scss" />
-    <Content Include="Home\font-awesome\scss\_rotated-flipped.scss" />
-    <Content Include="Home\font-awesome\scss\_spinning.scss" />
-    <Content Include="Home\font-awesome\scss\_stacked.scss" />
-    <Content Include="Home\font-awesome\scss\_variables.scss" />
-    <Content Include="Home\fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Home\fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="Home\fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="Home\fonts\glyphicons-halflings-regular.woff2" />
-    <Content Include="Home\js\parallax.js-1.4.2\bower.json" />
-    <Content Include="Home\js\parallax.js-1.4.2\LICENSE" />
-    <Content Include="Home\js\parallax.js-1.4.2\README.md" />
-    <Content Include="Home\less\agency.less" />
-    <Content Include="Home\less\mixins.less" />
-    <Content Include="Home\less\variables.less" />
-    <Content Include="Home\mail\contact_me.php" />
+    <Content Include="Content\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="Content\font-awesome\less\bordered-pulled.less" />
+    <Content Include="Content\font-awesome\less\core.less" />
+    <Content Include="Content\font-awesome\less\fixed-width.less" />
+    <Content Include="Content\font-awesome\less\font-awesome.less" />
+    <Content Include="Content\font-awesome\less\icons.less" />
+    <Content Include="Content\font-awesome\less\larger.less" />
+    <Content Include="Content\font-awesome\less\list.less" />
+    <Content Include="Content\font-awesome\less\mixins.less" />
+    <Content Include="Content\font-awesome\less\path.less" />
+    <Content Include="Content\font-awesome\less\rotated-flipped.less" />
+    <Content Include="Content\font-awesome\less\spinning.less" />
+    <Content Include="Content\font-awesome\less\stacked.less" />
+    <Content Include="Content\font-awesome\less\variables.less" />
+    <Content Include="Content\font-awesome\scss\font-awesome.scss" />
+    <Content Include="Content\font-awesome\scss\_bordered-pulled.scss" />
+    <Content Include="Content\font-awesome\scss\_core.scss" />
+    <Content Include="Content\font-awesome\scss\_fixed-width.scss" />
+    <Content Include="Content\font-awesome\scss\_icons.scss" />
+    <Content Include="Content\font-awesome\scss\_larger.scss" />
+    <Content Include="Content\font-awesome\scss\_list.scss" />
+    <Content Include="Content\font-awesome\scss\_mixins.scss" />
+    <Content Include="Content\font-awesome\scss\_path.scss" />
+    <Content Include="Content\font-awesome\scss\_rotated-flipped.scss" />
+    <Content Include="Content\font-awesome\scss\_spinning.scss" />
+    <Content Include="Content\font-awesome\scss\_stacked.scss" />
+    <Content Include="Content\font-awesome\scss\_variables.scss" />
     <None Include="Properties\PublishProfiles\nhatthientan.com.pubxml" />
     <None Include="Scripts\jquery-1.9.0.intellisense.js" />
     <Content Include="Scripts\jquery-1.9.0.js" />
@@ -1062,6 +1043,9 @@
     <Content Include="Scripts\jquery-2.1.3.min.map" />
     <Content Include="Upload\mauchucnang.xlsx" />
     <Content Include="Upload\mausanpham.xlsx" />
+    <Content Include="Scripts\js\parallax\bower.json" />
+    <Content Include="Scripts\js\parallax\LICENSE" />
+    <Content Include="Scripts\js\parallax\README.md" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
@@ -1138,13 +1122,6 @@
     <Compile Include="Pages\Admin\Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Product\Brands.aspx.cs">
-      <DependentUpon>Brands.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Pages\Product\Brands.aspx.designer.cs">
-      <DependentUpon>Brands.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Business\customer.cs" />
     <Compile Include="Business\Message.cs" />
     <Compile Include="Business\OptionDetail.cs" />
@@ -1187,13 +1164,6 @@
     <Compile Include="Pages\Admin\EditProduct.aspx.designer.cs">
       <DependentUpon>EditProduct.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Service\AdjustGuaranteeServices.aspx.cs">
-      <DependentUpon>AdjustGuaranteeServices.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Pages\Service\AdjustGuaranteeServices.aspx.designer.cs">
-      <DependentUpon>AdjustGuaranteeServices.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Pages\Admin\EditTechnique.aspx.cs">
       <DependentUpon>EditTechnique.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1204,13 +1174,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Product\HotProduct.aspx.cs">
-      <DependentUpon>HotProduct.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Pages\Product\HotProduct.aspx.designer.cs">
-      <DependentUpon>HotProduct.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Model\Core.cs" />
     <Compile Include="Pages\News\News.aspx.cs">
       <DependentUpon>News.aspx</DependentUpon>
@@ -1218,13 +1181,6 @@
     </Compile>
     <Compile Include="Pages\News\News.aspx.designer.cs">
       <DependentUpon>News.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\Service\MaintenanceServices.aspx.cs">
-      <DependentUpon>MaintenanceServices.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Pages\Service\MaintenanceServices.aspx.designer.cs">
-      <DependentUpon>MaintenanceServices.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Admin\NewProduct.aspx.cs">
       <DependentUpon>NewProduct.aspx</DependentUpon>
@@ -1247,20 +1203,6 @@
     <Compile Include="Pages\Admin\NewsList.aspx.designer.cs">
       <DependentUpon>NewsList.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Product\Photocopy.aspx.cs">
-      <DependentUpon>Photocopy.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Pages\Product\Photocopy.aspx.designer.cs">
-      <DependentUpon>Photocopy.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\Product\Print.aspx.cs">
-      <DependentUpon>Print.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Pages\Product\Print.aspx.designer.cs">
-      <DependentUpon>Print.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Pages\Admin\ProductList.aspx.cs">
       <DependentUpon>ProductList.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1268,19 +1210,12 @@
     <Compile Include="Pages\Admin\ProductList.aspx.designer.cs">
       <DependentUpon>ProductList.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Service\RentServices.aspx.cs">
-      <DependentUpon>RentServices.aspx</DependentUpon>
+    <Compile Include="Pages\Service\Services.aspx.cs">
+      <DependentUpon>Services.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Pages\Service\RentServices.aspx.designer.cs">
-      <DependentUpon>RentServices.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\Product\Scan.aspx.cs">
-      <DependentUpon>Scan.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Pages\Product\Scan.aspx.designer.cs">
-      <DependentUpon>Scan.aspx</DependentUpon>
+    <Compile Include="Pages\Service\Services.aspx.designer.cs">
+      <DependentUpon>Services.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Admin\TechniqueList.aspx.cs">
       <DependentUpon>TechniqueList.aspx</DependentUpon>
@@ -1346,13 +1281,6 @@
       <DependentUpon>ProductDetails.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Template%28Backup%29.Master.cs">
-      <DependentUpon>Template%28Backup%29.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Template%28Backup%29.Master.designer.cs">
-      <DependentUpon>Template%28Backup%29.Master</DependentUpon>
-    </Compile>
     <Compile Include="Result.aspx.cs">
       <DependentUpon>Result.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1360,9 +1288,6 @@
     <Compile Include="Result.aspx.designer.cs">
       <DependentUpon>Result.aspx</DependentUpon>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Template%28Backup%29.Master" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

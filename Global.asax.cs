@@ -18,21 +18,13 @@ namespace Photocopy
             routes.MapPageRoute("login", "dang-nhap", "~/Login.aspx");
             routes.MapPageRoute("regis", "tao-tai-khoan", "~/Pages/Admin/Register.aspx");
             routes.MapPageRoute("manageuser", "quan-li-tai-khoan", "~/Pages/Admin/ManageUser.aspx");
-            //routes.MapPageRoute("home", "home", "~/Home.aspx");
             routes.MapPageRoute("lienhe", "lien-he", "~/Contact.aspx");
             routes.MapPageRoute("gioithieu", "gioi-thieu", "~/About.aspx");
             routes.MapPageRoute("tintuc", "tin-tuc", "~/Pages/News/News.aspx");
             routes.MapPageRoute("tinchitiet", "tin-chi-tiet/{id}", "~/Pages/News/NewsDetail.aspx");
             routes.MapPageRoute("sanpham", "san-pham", "~/Pages/Product/Product.aspx");
             routes.MapPageRoute("chitietsanpham", "chi-tiet-san-pham/{id}", "~/Pages/Product/ProductDetails.aspx");
-            routes.MapPageRoute("mayphotocopy", "may-photocopy", "~/Pages/Product/Photocopy.aspx");
-            routes.MapPageRoute("mayin", "may-in", "~/Pages/Product/Print.aspx");
-            routes.MapPageRoute("mayscan", "may-scan", "~/Pages/Product/Scan.aspx");
-            routes.MapPageRoute("hotproduct", "hot-product", "~/Pages/Product/HotProduct.aspx");
-            routes.MapPageRoute("ketquatimkiem", "ket-qua-tim-kiem", "~/Result.aspx");
-            routes.MapPageRoute("lapdapbaohanhsuachua", "lap-dat-bao-hanh-sua-chua", "~/Pages/Service/AdjustGuaranteeServices.aspx");
-            routes.MapPageRoute("baotri", "bao-tri", "~/Pages/Service/MaintenanceServices.aspx");
-            routes.MapPageRoute("chothuemay", "cho-thue-may-photocopy", "~/Pages/Service/RentServices.aspx");
+            routes.MapPageRoute("chothuemay", "dich-vu", "~/Pages/Service/Services.aspx");
             routes.MapPageRoute("admin", "boss", "~/Pages/Admin/Boss.aspx");
             routes.MapPageRoute("productlist", "product-list", "~/Pages/Admin/ProductList.aspx");
             routes.MapPageRoute("newproduct", "new-product", "~/Pages/Admin/NewProduct.aspx");
@@ -93,7 +85,15 @@ namespace Photocopy
 
         protected void Application_BeginRequest(object sender, EventArgs e)
         {
-
+            HttpContext.Current.Response.AddHeader("Access-Control-Allow-Origin", "*");
+            if (HttpContext.Current.Request.HttpMethod == "OPTIONS")
+            {
+                HttpContext.Current.Response.AddHeader("Cache-Control", "no-cache");
+                HttpContext.Current.Response.AddHeader("Access-Control-Allow-Methods", "GET, POST");
+                HttpContext.Current.Response.AddHeader("Access-Control-Allow-Headers", "Content-Type, Accept");
+                HttpContext.Current.Response.AddHeader("Access-Control-Max-Age", "1728000");
+                HttpContext.Current.Response.End();
+            }
         }
 
         protected void Application_AuthenticateRequest(object sender, EventArgs e)

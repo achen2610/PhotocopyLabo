@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Template.Master" AutoEventWireup="true" CodeBehind="News.aspx.cs" Inherits="Photocopy.Information" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-        <title>NHẤT THIÊN TÂN | DANH SÁCH TIN TỨC</title>
+        <title>Nhất Thiên Tân | Danh sách tin tức</title>
 
 </asp:Content>
 
@@ -12,12 +12,12 @@
             <asp:Repeater ID="rpNewsList" runat="server">
                 <ItemTemplate>
                     <div class="tin-tuc-list row">
-                        <div class="col-lg-2">
+                        <div class="col-lg-2 col-sm-4">
                             <div class="tintuc-image">
                                 <img src='http://i1056.photobucket.com/albums/t378/hungld/Tintuc/<%#Eval("TinTucImage") %>.jpg' class="img-responsive img-thumbnail" />
                             </div>
                         </div>
-                        <div class="col-lg-10">
+                        <div class="col-lg-10 col-sm-8">
                             <div class="tintuc-content">
                                 <div class="tintuc-content-h3">
                                     <a href='/tin-chi-tiet/<%#Eval("TinTucID") %>' class="tintuc-h3"><%#Eval("TinTucTitle") %></a>
